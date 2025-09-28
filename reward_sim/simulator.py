@@ -60,9 +60,9 @@ def plot_and_save_hist(prob_percent, rewards, expected, out_dir=OUTPUT_DIR):
         ax.set_xlim(center - pad, center + pad)
 
     ax.set_title(f"보상 분포 히스토그램 - 성공확률 {prob_percent}%") # 그래프 제목
-    ax.set_xlabel("총 보상량")                              # X축 라벨
+    ax.set_xlabel("총 보상량")                               # X축 라벨
     ax.set_ylabel("빈도수")                                  # Y축 라벨
-    ax.legend()                                              # 범례 표시
+    ax.legend()                                             # 범례 표시
 
     plt.savefig(save_path, bbox_inches="tight")              # 그래프 저장
     plt.close()                                              # 메모리 해제
