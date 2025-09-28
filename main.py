@@ -40,7 +40,8 @@ if __name__ == "__main__":                 # 프로그램 실행 시작점
     # CSV 저장
     csv_filename = "reward_stats.csv"
     with open(csv_filename, mode="w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=["확률(%)", "평균 보상", "표준편차", "최소", "최대", "이론 기대값", "히스토그램 파일"])
+        writer = csv.DictWriter(f, fieldnames=["확률(%)", "평균 보상", "표준편차", "최소",
+                                                "최대", "이론 기대값", "히스토그램 파일"])
         writer.writeheader()
         writer.writerows(stats_list)
 

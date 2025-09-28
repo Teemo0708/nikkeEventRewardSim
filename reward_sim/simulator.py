@@ -20,7 +20,7 @@ DAYS = 28                  # 이벤트 진행일 수
 BATTLES_PER_DAY = 5        # 하루 전투 횟수
 TRIALS = DAYS * BATTLES_PER_DAY  # 전체 전투 횟수 = 28 * 5 = 140
 N_SIM = 10000              # 시뮬레이션 반복 횟수
-OUTPUT_DIR = "reward_hists" # 결과 그래프 저장 폴더명
+OUTPUT_DIR = "reward_hists" # 결과 히스토그램 저장 폴더명
 
 def simulate_rewards_array(prob_percent, n_sim=N_SIM): 
     p = prob_percent / 100.0                                # %를 0~1 확률로 변환
