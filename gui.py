@@ -60,7 +60,7 @@ def on_close():
 
 # UI 구성
 root = tk.Tk()
-root.title("보상 시뮬레이터 (즉시 결과/그래프)")
+root.title("보상 시뮬레이터")
 root.protocol("WM_DELETE_WINDOW", on_close)
 
 frame_input = tk.Frame(root)
