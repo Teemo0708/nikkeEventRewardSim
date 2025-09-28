@@ -21,7 +21,7 @@ def run_simulation():
             f"[{stats['확률(%)']}%]\n"
             f"평균={stats['평균 보상']:.1f} | 표준편차={stats['표준편차']:.1f}\n"
             f"최소={stats['최소']} | 최대={stats['최대']}\n"
-            f"이론 기대값={expected:.1f}"
+            f"이론 기댓값={expected:.1f}"
         )
         result_text.set(msg)
 
@@ -35,7 +35,7 @@ def run_simulation():
         mean_val = np.mean(rewards)
         # zorder로 항상 파랑 뒤 → 빨강 앞
         ax.axvline(expected, color="blue", linestyle="-", linewidth=2.6,
-                   label="이론 기대값", zorder=1)
+                   label="이론 기댓값", zorder=1)
         ax.axvline(mean_val, color="red", linestyle="--", linewidth=2,
                    label="실험 평균", zorder=2)
 
