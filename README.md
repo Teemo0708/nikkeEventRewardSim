@@ -1,5 +1,6 @@
-📘 보상 시뮬레이터 (NIKKE Event Reward Simulator)
-🔎 개요
+# 📘 **니케 이벤트 보상 시뮬레이터** (NIKKE Event Reward Simulator)
+
+🔎 **개요**
 
 본 프로그램은 [승리의 여신: 니케] 이벤트 상점 보상 시스템을 분석하기 위해 제작된 시뮬레이터입니다.
 
